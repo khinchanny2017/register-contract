@@ -1,0 +1,38 @@
+body{
+	   font-family: Verdana, Geneva,Battambang, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+img.imgsize {
+    width: 20%;
+}
+.block01.man_h3 h2,h3{
+    text-align: center;
+    color: #a94442;
+    font-weight: bold;
+}
+
+.container.block {
+    background: #f5f5f596;
+    padding: 20px;
+    margin-top: 10px;
+}
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 3px;
+}
+.col-md-12.collage h3 {
+    color: #333;
+}
+.col-md-12.collage {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.col-md-12​​​.padd_block {
+    padding: 15px;
+}
+
+h4.font_title {
+    font-weight: bold;
+}
