@@ -20,7 +20,7 @@
 					   		<div class="col-md-3">
 					   		 	<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
 					        		{!! Form::label('name', 'ឈ្មោះ') !!}
-					        		{!! Form::text('name', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        		{!! Form::text('name', null, ['class' => 'form-control', 'required' => 'Name']) !!}
 					        		<small class="text-danger">{{ $errors->first('name') }}</small>
 					    		</div>
 					   		</div>
@@ -271,6 +271,7 @@
     			<div class="panel-heading"><h4 class="font_title">ភាសាបរទេស</h4></div>
     			<div class="panel-body">
     				<div class="col-md-12​​​ padd_block">
+
     				</div>
     			</div>
     		</div>
