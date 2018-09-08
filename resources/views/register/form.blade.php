@@ -282,6 +282,8 @@
 		        	{!! Form::submit("Submit", ['class' => 'btn btn-success']) !!}
 		    	</div>
 		   	</div>
+
+		   	
 		   
 		    
 		
