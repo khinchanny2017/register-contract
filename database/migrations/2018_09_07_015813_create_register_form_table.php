@@ -47,8 +47,15 @@ class CreateRegisterFormTable extends Migration
             $table->string('second_parents_2');           
             $table->string('second_parents_2_postion');           
             $table->integer('second_parents_2_phone_num'); 
-            $table->string('address_parents');         
+            $table->string('address_parents');  
+           //lan
+            $table->string('eng'); 
+            $table->string('chi'); 
+            $table->string('fre'); 
+            $table->string('other'); 
             $table->timestamps();
+            // lan
+        
         });
     }
 

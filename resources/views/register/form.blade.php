@@ -20,7 +20,7 @@
 					   		<div class="col-md-3">
 					   		 	<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
 					        		{!! Form::label('name', 'ឈ្មោះ') !!}
-					        		{!! Form::text('name', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        		{!! Form::text('name', null, ['class' => 'form-control', 'required' => 'Name']) !!}
 					        		<small class="text-danger">{{ $errors->first('name') }}</small>
 					    		</div>
 					   		</div>
@@ -237,21 +237,21 @@
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2', 'អាណាព្យាបាលទី២') !!}
-					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_postion') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_postion', 'មុខរបរ') !!}
-					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_postion') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_phone_num') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_phone_num', 'លេខទូរស័ព្ទ') !!}
-					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_phone_num') }}</small>
 					    	</div>
 					   	</div>
@@ -268,13 +268,29 @@
     			</div>
     		</div>
     		<div class="panel panel-default">
-    			<div class="panel-heading"><h4 class="font_title">ភាសាបរទេស</h4></div>
+    			<div class="panel-heading"><h4 class="font_title">ភាសាបរទេស </h4></div>
     			<div class="panel-body">
-    				<div class="col-md-12​​​ padd_block">
-    				</div>
+    				<div class="col-md-12​​​​ padd_block">
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('eng', 'អង់គ្លេស', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('eng', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('chi', 'ចិន', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('chi', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('fre', 'បារំាង', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('fre', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('other', 'ភាសាផ្សេងៗ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('other', ['0' => 'ជ្រើសរើស', '1' => 'ជប៉ុន', '2' => 'កូរ៉េ', '3' => 'រុស្ស៊ី', '4' => 'អេស្បាញ '],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   		</div>
+    			   		
+    			   	</div>
     			</div>
-    		</div>
-
 
 		   	<div class="col-md-12">
 		   		<div class="btn-group pull-right">
