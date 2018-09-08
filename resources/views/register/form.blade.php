@@ -237,21 +237,21 @@
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2', 'អាណាព្យាបាលទី២') !!}
-					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control']) !!}
+					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_postion') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_postion', 'មុខរបរ') !!}
-					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control']) !!}
+					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_postion') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_phone_num') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_phone_num', 'លេខទូរស័ព្ទ') !!}
-					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control']) !!}
+					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control','required' => 'required']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_phone_num') }}</small>
 					    	</div>
 					   	</div>
