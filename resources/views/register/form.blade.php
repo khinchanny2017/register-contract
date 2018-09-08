@@ -268,14 +268,29 @@
     			</div>
     		</div>
     		<div class="panel panel-default">
-    			<div class="panel-heading"><h4 class="font_title">ភាសាបរទេស</h4></div>
+    			<div class="panel-heading"><h4 class="font_title">ភាសាបរទេស </h4></div>
     			<div class="panel-body">
-    				<div class="col-md-12​​​ padd_block">
-
-    				</div>
+    				<div class="col-md-12​​​​ padd_block">
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('select', 'អង់គ្លេស', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('eng', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('select', 'ចិន', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('chi', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('fre', 'បារំាង', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('select', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   			<div class="col-md-3">
+    			   				{!! Form::label('select', 'ភាសាផ្សេងៗ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('other', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   			</div>
+    			   		</div>
+    			   		
+    			   	</div>
     			</div>
-    		</div>
-
 
 		   	<div class="col-md-12">
 		   		<div class="btn-group pull-right">
