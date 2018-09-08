@@ -237,21 +237,21 @@
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2', 'អាណាព្យាបាលទី២') !!}
-					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2', null, ['class' => 'form-control']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_postion') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_postion', 'មុខរបរ') !!}
-					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2_postion', null, ['class' => 'form-control']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_postion') }}</small>
 					    	</div>
 					   	</div>
 					   	<div class="col-md-4">
 					   		<div class="form-group{{ $errors->has('second_parents_2_phone_num') ? ' has-error' : '' }}">
 					        	{!! Form::label('second_parents_2_phone_num', 'លេខទូរស័ព្ទ') !!}
-					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control', 'required' => 'required']) !!}
+					        	{!! Form::text('second_parents_2_phone_num', null, ['class' => 'form-control']) !!}
 					        	<small class="text-danger">{{ $errors->first('second_parents_2_phone_num') }}</small>
 					    	</div>
 					   	</div>
@@ -272,20 +272,20 @@
     			<div class="panel-body">
     				<div class="col-md-12​​​​ padd_block">
     			   			<div class="col-md-3">
-    			   				{!! Form::label('select', 'អង់គ្លេស', ['class' => 'control-label'] )  !!}					        
+    			   				{!! Form::label('eng', 'អង់គ្លេស', ['class' => 'control-label'] )  !!}					        
 					            {!!  Form::select('eng', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
     			   			</div>
     			   			<div class="col-md-3">
-    			   				{!! Form::label('select', 'ចិន', ['class' => 'control-label'] )  !!}					        
+    			   				{!! Form::label('chi', 'ចិន', ['class' => 'control-label'] )  !!}					        
 					            {!!  Form::select('chi', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
     			   			</div>
     			   			<div class="col-md-3">
     			   				{!! Form::label('fre', 'បារំាង', ['class' => 'control-label'] )  !!}					        
-					            {!!  Form::select('select', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+					            {!!  Form::select('fre', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
     			   			</div>
     			   			<div class="col-md-3">
-    			   				{!! Form::label('select', 'ភាសាផ្សេងៗ', ['class' => 'control-label'] )  !!}					        
-					            {!!  Form::select('other', ['0' => 'ជ្រើសរើស', '1' => 'អត់ចេះ​', '2' => 'ចេះតិចតួច', '3' => 'ចេះមធ្យម', '4' => 'ចេះបង្កួរ ','5' => 'ស្ទាត់ជំនាញ'],  '6', ['class' => 'form-control' ]) !!}
+    			   				{!! Form::label('other', 'ភាសាផ្សេងៗ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('other', ['0' => 'ជ្រើសរើស', '1' => 'ជប៉ុន', '2' => 'កូរ៉េ', '3' => 'រុស្ស៊ី', '4' => 'អេស្បាញ '],  '6', ['class' => 'form-control' ]) !!}
     			   			</div>
     			   		</div>
     			   		
