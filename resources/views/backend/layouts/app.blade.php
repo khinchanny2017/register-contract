@@ -170,28 +170,7 @@
                     <!-- END OVERVIEW -->
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- RECENT PURCHASES -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Recent Purchases</h3>
-                                    <div class="right">
-                                        <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                                        <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-                                    </div>
-                                </div>
-                                <div class="panel-body no-padding">
-                                    <table class="table table-striped">
-                                        @yield('content')
-                                    </table>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="row">
-                                        <div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
-                                        <div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All Purchases</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END RECENT PURCHASES -->
+                            @yield('content')
                         </div>
                         
                     </div>
@@ -204,7 +183,7 @@
         <div class="clearfix"></div>
         <footer>
             <div class="container-fluid">
-                <p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+                <p class="copyright">&copy; 2018 <a href="#" target="_blank">Life Education</a>. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
