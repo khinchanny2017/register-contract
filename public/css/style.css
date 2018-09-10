@@ -1,5 +1,5 @@
 body{
-	   font-family: Verdana, Geneva,Battambang, sans-serif;
+       font-family: Verdana, Geneva,Battambang, sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
@@ -16,6 +16,7 @@ img.imgsize {
     background: #f5f5f596;
     padding: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .form-horizontal .form-group {
     margin-right: -15px;
