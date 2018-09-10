@@ -26,3 +26,7 @@ Route::get('show', 'RegisterController@show')->name('show');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
