@@ -16,6 +16,9 @@
     			<div class="panel-heading"><h4 class="font_title">ពត៌មានផ្ទាល់ខ្លួន</h4></div>
     			<div class="panel-body">
     				<div class="col-md-12​​​ padd_block">
+    					<div class="col-md-12​​​">
+    						<p>Please provide information for each field marked *. Please supply either home or business address details. After submitting this form, you will be contacted by CEO Institure Information for confirmation and sit for an entrance exam if necessary..</p>
+    					</div>
 		   				
 					   		<div class="col-md-3">
 					   		 	<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -32,11 +35,8 @@
 					    		</div>
 					   		</div>
 					   		<div class="col-md-3">
-					   		 	<div class="form-group{{ $errors->has('gender') ? ' has-error' : '' }}">
-					        		{!! Form::label('gender', 'ភេទ') !!}
-					        		{!! Form::text('gender', null, ['class' => 'form-control', 'required' => 'required']) !!}
-					        		<small class="text-danger">{{ $errors->first('gender') }}</small>
-					    		</div>
+					   		 	{!! Form::label('chi', 'ភេទ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('chi', ['0' => 'ជ្រើសរើស', '1' => 'ប្រុស', '2' => 'ស្រី'],  '6', ['class' => 'form-control' ]) !!}
 					   		</div>		   		   	
 					   		<div class="col-md-3">
 					   			<div class="form-group{{ $errors->has('national') ? ' has-error' : '' }}">
@@ -299,12 +299,29 @@
 		    	</div>
 		   	</div>
 
-		   	
-		   
+		   	<!-- footer -->
+		   	<!-- Footer -->
 		    
 		
 		{!! Form::close() !!}
 		</div>
+	</div>
+	<div class="container">
+		<footer class="page-footer font-small blue pt-4">
+
+    
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#"> Life Education</a><br>
+      <p>#02, St.484 T St 97, Sangkat Psar Deum Thkov, Khan Chamkarmorn
+Phnom Penh</p>
+<p class="phone-call">Call 023 666 6999 </p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 	</div>
 
 

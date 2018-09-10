@@ -37,3 +37,7 @@ img.imgsize {
 h4.font_title {
     font-weight: bold;
 }
+.phone-call {
+    font-weight: bold;
+    color :#f00;
+}
