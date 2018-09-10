@@ -38,4 +38,12 @@ class RegisterController extends Controller
    		return redirect()->route('index')
                         ->with('success','Product created successfully.');
    	}
+
+    // function show
+    public function show()
+    {
+      $users = DB::table('register_form')->get();
+
+        return view('register.show', ['users' => $users]);
+    }
 }

@@ -308,21 +308,17 @@
 	</div>
 	<div class="container">
 		<footer class="page-footer font-small blue pt-4">
-
-    
-
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="#"> Life Education</a><br>
-      <p>#02, St.484 T St 97, Sangkat Psar Deum Thkov, Khan Chamkarmorn
-Phnom Penh</p>
-<p class="phone-call">Call 023 666 6999 </p>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
+		    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+		      <a href="#"> Life Education</a><br>
+		      <p>#02, St.484 T St 97, Sangkat Psar Deum Thkov, Khan Chamkarmorn
+			  Phnom Penh</p>
+			<p class="phone-call">Call 023 666 6999 </p>
+		    </div>
+		</footer>
 	</div>
+
+	
 
 
  

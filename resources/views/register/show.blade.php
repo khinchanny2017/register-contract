@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2><a href="{{ route('create') }}">ពាក្យចូលរៀន នឹងកិច្ចសន្យា</a></h2>
+                <h2><a href="{{ route('create') }}">ព័ត៌មានលំអិត</a></h2>
             </div>
             
         </div>
@@ -53,7 +53,7 @@
                 <form action="#" method="POST">
 
                     <a class="btn btn-sm btn-info" href="{{ route('show') }}">Show</a> 
-                    {{-- <a class="btn btn-sm btn-primary" href="#">Edit</a> --}}
+                    <a class="btn btn-sm btn-primary" href="#">Edit</a>
 
                     @csrf
                 </form>
