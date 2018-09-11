@@ -16,11 +16,11 @@ Route::get('/', function () {
 });
 
 
-Route::get('/index','RegisterController@index')->name('index');
+Route::get('/backend/index','Backend\RegisterController@index')->name('index');
 Route::get('/create','RegisterController@create')->name('create');
 Route::post('/store','RegisterController@store')->name('store');
 
-Route::get('show', 'RegisterController@show')->name('show');
+Route::get('backend/show', 'backend\RegisterController@show')->name('show');
 
 
 Auth::routes();

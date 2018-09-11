@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\backend;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 use App\Models\RegisterModel;
 use DB;
 
@@ -13,7 +15,7 @@ class RegisterController extends Controller
     {
     	 $users = DB::table('register_form')->get();
 
-        return view('register.index', ['users' => $users]);
+        return view('backend/register.index', ['users' => $users]);
     }
 
    	public function create()
@@ -44,6 +46,6 @@ class RegisterController extends Controller
     {
       $users = DB::table('register_form')->get();
 
-        return view('register.show', ['users' => $users]);
+        return view('backend.register.show', ['users' => $users]);
     }
 }

@@ -1,0 +1,11 @@
+@extends('backend.layouts.app')
+
+@section('content')
+
+<div class="row">
+	<div class="col-md-12">
+		Hello
+	</div>
+</div>
+
+@endsection()
