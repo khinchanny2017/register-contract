@@ -6,7 +6,7 @@
 		<img src="img/logo_ceoins.png" alt="">
 		
 			<div class="block01 man_h3 ">
-				<h2><a href="{{ route('index') }}">ពាក្យចូលរៀន និងកិច្ចសន្យា</a></h2>
+				<h2><a href="#">ពាក្យចូលរៀន និងកិច្ចសន្យា</a></h2>
 					<h3>ថ្នាក់បរិញ្ញាបត្រ</h3>	
 			</div>			
 		
@@ -16,9 +16,6 @@
     			<div class="panel-heading"><h4 class="font_title">ពត៌មានផ្ទាល់ខ្លួន</h4></div>
     			<div class="panel-body">
     				<div class="col-md-12​​​ padd_block">
-    				{{-- 	<div class="col-md-12​​​">
-    						<p>Please provide information for each field marked *. Please supply either home or business address details. After submitting this form, you will be contacted by CEO Institure Information for confirmation and sit for an entrance exam if necessary..</p>
-    					</div> --}}
 		   				
 					   		<div class="col-md-3">
 					   		 	<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">

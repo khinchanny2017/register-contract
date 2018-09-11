@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\RegisterModel;
+use App\Models\Product;
 use DB;
 
 class RegisterController extends Controller
@@ -30,13 +31,12 @@ class RegisterController extends Controller
    			'en_name' 	=> 'required',
    			'gender'	=> 'required',
    			'national'	=> 'required',
-   			'id_number'	=> 'required|max:9|min:9',
+   			'id_number'	=> 'required',
    			'dob'		=> 'required'
    		]);
    		RegisterModel::create($request->all());
-        dd($request->all()); exit();
-   		return redirect()->route('index')
-                        ->with('success','Product created successfully.');
+   		// return redirect()->route('index')
+     //                    ->with('success','Product created successfully.');
    	}
 
     // function show
@@ -46,4 +46,5 @@ class RegisterController extends Controller
 
         return view('frontend.register.show', ['users' => $users]);
     }
+
 }
