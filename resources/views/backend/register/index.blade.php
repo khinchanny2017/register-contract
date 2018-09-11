@@ -6,7 +6,7 @@
 	<div class ="col-md-12">
 		<div class="panel">
 			<div class="panel-heading">
-			<h3 class="panel-title bold">List Name Student Register</h3>
+			<h3 class="panel-title bold">បញ្ញីឈ្មោះសិស្ស</h3>
 				<div class="right">
 				<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
 				<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
@@ -45,15 +45,15 @@
 					            <td>{{ $product->edu_level }}</td>
 					            <td>{{ $product->grade }}</td>
             				<td>
-                		<form action="#" method="POST">
-                			<a class="btn btn-sm btn-info" href="{{ route('show') }}">Show</a> 
-                    {{-- <a class="btn btn-sm btn-primary" href="#">Edit</a> --}}
+                				<form action="#" method="POST">
+                				<a class="btn btn-sm btn-info" href="{{ route('show') }}">Show</a> 
+                   					 {{-- <a class="btn btn-sm btn-primary" href="#">Edit</a> --}}
 
-                    @csrf
-                </form>
-            </td>
-        </tr>
-        @endforeach
+                    		@csrf
+                			</form>
+            				</td>
+        				</tr>
+        					@endforeach
 						</tbody>
 					</table>
 				</div>

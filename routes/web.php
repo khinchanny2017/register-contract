@@ -16,9 +16,11 @@ Route::get('/', function () {
 });
 
 
+
+// frontend
 Route::get('/backend/index','Backend\RegisterController@index')->name('index');
-Route::get('/create','RegisterController@create')->name('create');
-Route::post('/store','RegisterController@store')->name('store');
+Route::get('/frontent/create','frontend\RegisterController@create')->name('create');
+Route::post('/frontend/store','frontend\RegisterController@store')->name('store');
 
 Route::get('backend/show', 'backend\RegisterController@show')->name('show');
 
@@ -27,4 +29,3 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();

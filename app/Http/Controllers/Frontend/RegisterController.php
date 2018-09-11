@@ -1,26 +1,24 @@
 <?php
 
-namespace App\Http\Controllers\backend;
+namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
 use App\Models\RegisterModel;
 use DB;
 
 class RegisterController extends Controller
 {
-    //
     public function index()
     {
     	 $users = DB::table('register_form')->latest()->get();
 
-        return view('backend/register.index', ['users' => $users]);
+        return view('frontend.register.index', ['users' => $users]);
     }
 
    	public function create()
    	{
-   		return view('register.form');
+   		return view('frontend.registers.form');
    	}
 
 
@@ -36,7 +34,7 @@ class RegisterController extends Controller
    			'dob'		=> 'required'
    		]);
    		RegisterModel::create($request->all());
-
+        dd($request->all()); exit();
    		return redirect()->route('index')
                         ->with('success','Product created successfully.');
    	}
@@ -46,6 +44,6 @@ class RegisterController extends Controller
     {
       $users = DB::table('register_form')->get();
 
-        return view('backend.register.show', ['users' => $users]);
+        return view('frontend.register.show', ['users' => $users]);
     }
 }
