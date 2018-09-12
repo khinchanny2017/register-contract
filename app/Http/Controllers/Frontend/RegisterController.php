@@ -31,12 +31,12 @@ class RegisterController extends Controller
    			'en_name' 	=> 'required',
    			'gender'	=> 'required',
    			'national'	=> 'required',
-   			'id_number'	=> 'required',
+   			'id_number'	=> 'required|max:9|min:9',
    			'dob'		=> 'required'
    		]);
    		RegisterModel::create($request->all());
-   		// return redirect()->route('index')
-     //                    ->with('success','Product created successfully.');
+   		return redirect()->route('index')
+                        ->with('success','Product created successfully.');
    	}
 
     // function show
