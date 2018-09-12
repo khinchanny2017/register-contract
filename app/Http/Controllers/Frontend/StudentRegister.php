@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use App\Models\RegisterModel;
+use DB;
 
 class StudentRegister extends Controller
 {
@@ -16,7 +17,8 @@ class StudentRegister extends Controller
      */
     public function index()
     {
-        //
+        return view('frontend.student-register.index');
+        // echo "string";
     }
 
     /**
@@ -27,7 +29,7 @@ class StudentRegister extends Controller
     public function create()
     {
         //
-        return view ('frontend.registers.form');
+        return view ('frontend.student-register.form');
     }
 
     /**
@@ -38,7 +40,7 @@ class StudentRegister extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate([
+        $this->validate($request,[
             'name'      => 'required',
             'en_name'   => 'required',
             'gender'    => 'required',
