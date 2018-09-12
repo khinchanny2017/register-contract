@@ -18,14 +18,21 @@ Route::get('/', function () {
 
 
 // frontend
-Route::get('/backend/index','frontend\RegisterController@index')->name('index');
-Route::get('/frontend/create','frontend\RegisterController@create')->name('create');
-Route::post('/frontend/store','frontend\RegisterController@store')->name('store');
+Route::get('/register/index','Frontend\RegisterController@index')->name('index');
+Route::get('/register/create','Frontend\RegisterController@createRegister')->name('createRegister');
+Route::post('/register/store','Frontend\RegisterController@createRegister')->name('createRegister');
 
-Route::get('backend/show', 'backend\RegisterController@show')->name('show');
-
+Route::get('backend/show', 'backend\RegisterController@show')->name('show');  
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+// test products
+Route::get('products/create', 'Frontend\RegisterController@createProduct')->name('createProduct');
+Route::post('products/store', 'Frontend\RegisterController@storeProduct')->name('storeproduct');
+
+
+// 
+Route::resource('student', 'Frontend\StudentRegister');

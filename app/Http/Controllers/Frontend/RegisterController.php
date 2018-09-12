@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\RegisterModel;
-use DB;
+// use App\Models\RegisterModel;
+// use DB;
+use App\Models\Product;
 
 class RegisterController extends Controller
 {
@@ -16,14 +17,14 @@ class RegisterController extends Controller
         return view('frontend.register.index', ['users' => $users]);
     }
 
-   	public function create()
+   	public function createRegister()
    	{
    		return view('frontend.registers.form');
    	}
 
 
    	//
-   	public function store(Request $request)
+   	public function storeRegister(Request $request)
    	{
    		request()->validate([
    			'name' 		=> 'required',
@@ -34,10 +35,11 @@ class RegisterController extends Controller
    			'dob'		=> 'required'
    		]);
    		RegisterModel::create($request->all());
-   		return redirect()->route('index')
+   		return redirect()->route('home')
                         ->with('success','Product created successfully.');
    	}
 
+    
     
 
 }

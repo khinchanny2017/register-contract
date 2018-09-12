@@ -73,7 +73,7 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         {{-- <a href="{{ route('login') }}">Login</a> --}}
-                        <a href="{{ route('create') }}">Register</a>
+                        <a href="{{ route('student.create') }}">Register</a>
                     @endauth
                 </div>
             @endif

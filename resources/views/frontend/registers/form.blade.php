@@ -1,4 +1,4 @@
-@extends('layout-frontend.app')
+@extends('frontend.layout.app')
 
 @section('content')
 	
@@ -11,7 +11,8 @@
 			</div>			
 		
 		<div class="row">			
-			{!! Form::open(['method' => 'POST', 'route' => 'store', 'class' => 'form-horizontal']) !!}
+			{!! Form::open(['method' => 'POST', 'route' => 'student.store', 'class' => 'form-horizontal']) !!}
+			
 			<div class="panel panel-default">
     			<div class="panel-heading"><h4 class="font_title">ពត៌មានផ្ទាល់ខ្លួន</h4></div>
     			<div class="panel-body">
@@ -32,8 +33,8 @@
 					    		</div>
 					   		</div>
 					   		<div class="col-md-3">
-					   		 	{!! Form::label('chi', 'ភេទ', ['class' => 'control-label'] )  !!}					        
-					            {!!  Form::select('chi', ['0' => 'ជ្រើសរើស', '1' => 'ប្រុស', '2' => 'ស្រី'],  '6', ['class' => 'form-control' ]) !!}
+					   		 	{!! Form::label('gender', 'ភេទ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('gender', ['0' => 'ជ្រើសរើស', '1' => 'ប្រុស', '2' => 'ស្រី'],  '6', ['class' => 'form-control' ]) !!}
 					   		</div>		   		   	
 					   		<div class="col-md-3">
 					   			<div class="form-group{{ $errors->has('national') ? ' has-error' : '' }}">
