@@ -3,7 +3,7 @@
 @section('content')
 	
 	<div class="container block">
-		<img src="{{ asset('img/logo_ceoins.png') }}" alt="">
+		<img src="{{ asset('public/img/logo_ceoins.png') }}" alt="">
 		
 			<div class="block01 man_h3 ">
 				<h2><a href="#">ពាក្យចូលរៀន និងកិច្ចសន្យា</a></h2>

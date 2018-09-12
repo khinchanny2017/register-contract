@@ -25,7 +25,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">      
