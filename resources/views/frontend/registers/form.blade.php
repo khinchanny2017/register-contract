@@ -3,7 +3,7 @@
 @section('content')
 	
 	<div class="container block">
-		<img src="img/logo_ceoins.png" alt="">
+		<img src="{{ asset('img/logo_ceoins.png') }}" alt="">
 		
 			<div class="block01 man_h3 ">
 				<h2><a href="#">ពាក្យចូលរៀន និងកិច្ចសន្យា</a></h2>
@@ -142,11 +142,10 @@
 				   			</div>
 				   		</div>
 				   		<div class="col-md-3">
-				   			<div class="form-group{{ $errors->has('grade') ? ' has-error' : '' }}">
-				   			    {!! Form::label('grade', 'និទ្ទេស') !!}
-				   			    {!! Form::text('grade', null, ['class' => 'form-control', 'required' => 'required']) !!}
-				   			    <small class="text-danger">{{ $errors->first('grade') }}</small>
-				   			</div>
+				   			
+
+				   			{!! Form::label('grade', 'និទ្ទេស', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('grade', ['0' => 'ជ្រើសរើស', '1' => 'A', '2' => 'B','3' => 'C', '4' => 'D','5' => 'E', '6' => 'F'], '7', ['class' => 'form-control' ]) !!}
 				   		</div>
 		   			</div>
 		   			<div class="col-md-12">
@@ -165,11 +164,9 @@
 				   			</div>
 				   		</div>
 				   		<div class="col-md-3">
-				   			<div class="form-group{{ $errors->has('dir_school_gender') ? ' has-error' : '' }}">
-				   			    {!! Form::label('dir_school_gender', 'ភេទ') !!}
-				   			    {!! Form::text('dir_school_gender', null, ['class' => 'form-control', 'required' => 'required']) !!}
-				   			    <small class="text-danger">{{ $errors->first('dir_school_gender') }}</small>
-				   			</div>
+				   			
+				   			{!! Form::label('dir_school_gender', 'ភេទ', ['class' => 'control-label'] )  !!}					        
+					            {!!  Form::select('dir_school_gender', ['0' => 'ជ្រើសរើស', '1' => 'ប្រុស', '2' => 'ស្រី'],  '6', ['class' => 'form-control' ]) !!}
 				   		</div>
 				   		<div class="col-md-3">
 				   			<div class="form-group{{ $errors->has('dir_school_phone') ? ' has-error' : '' }}">

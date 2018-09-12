@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\RegisterModel;
-use App\Models\Product;
 use DB;
 
 class RegisterController extends Controller
@@ -39,12 +38,6 @@ class RegisterController extends Controller
                         ->with('success','Product created successfully.');
    	}
 
-    // function show
-    public function show()
-    {
-      $users = DB::table('register_form')->get();
-
-        return view('frontend.register.show', ['users' => $users]);
-    }
+    
 
 }
