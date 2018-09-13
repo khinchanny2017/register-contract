@@ -1,0 +1,4 @@
+Route::get('command', function() {
+    \Artisan::call('config:cache');
+    dd("Done");
+});
